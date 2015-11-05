@@ -1,0 +1,11 @@
+usuario (id, nome, cpf, dtnasc, email, telefone).
+categoria(id, nome, debito, credito)*
+subcategoria(id_us, id_ca, id, nome)
+dadosviagem(id_us, id, dtinicio, dtfim, local, transporte, hospedagem)
+credito(id_us, id_vi, id_ca, id_sca, valor)
+debito(id_us, id_vi, id_ca, id_sca, valor)
+total(id_us, id_vi, vcred, vdeb, vtot)*
+seguranca(id_us, horasolicitacao, codseg).
+paises(id, sigla, nome)*.
+estados(id, id_pais, uf, nome)*.
+cidades(id, id_es, nome)*.
